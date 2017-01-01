@@ -1,0 +1,23 @@
+<table class="table table-bordered" ng-init="getEmployees()">
+	<thead>
+	<tr>
+	  <th>Name</th>
+	  <th>Department</th>
+	  <th>Location</th>
+
+	  <th>Actions</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="employee in employees | filter:search">
+	  <td>{{ employee.name }}</td>
+	  <td>{{ employee.dept }}</td>
+	  <td>{{ employee.area }}</td>
+	  <td> 
+	    <a href="#/employees/{{employee.id}}/show" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> Show  </a>
+	    <a href="#/employees/{{employee.id}}/edit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent1"> Edit  </a>
+	  	<a ng-click="deleteEmployee(employee.id)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Delete </a>
+	  </td>
+	</tr>
+	</tbody>
+</table>

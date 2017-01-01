@@ -1,0 +1,32 @@
+<div class="panel panel-default" ng-init="showEmployee()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Employee's Details Information </p>
+	</div>
+	<div class="panel-body">
+		<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="margin-bottom:10px">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Name</th>
+      <th class="mdl-data-table__cell--non-numeric">Department</th>
+      <th class="mdl-data-table__cell--non-numeric">Location</th>
+      <th class="mdl-data-table__cell--non-numeric">Status</th>
+      <th class="mdl-data-table__cell--non-numeric">contact</th>
+      <th class="mdl-data-table__cell--non-numeric">Salary</th>
+      <th>Employee ID:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">{{employee.name}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{employee.dept}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{employee.area}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{employee.status}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{employee.contact}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{employee.salary}}</td>
+      <td>{{employee.id}}</td>
+    </tr>
+      </tbody>
+</table>
+ <a href="#/employees" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> Close</a>		
+    <div>
+<div>
